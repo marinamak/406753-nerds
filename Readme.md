@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Марина](https://up.htmlacademy.ru/htmlcss/20/user/406753).
-* Наставник: `Неизвестно`.
+* Наставник: [Анастасия]{(https://up.htmlacademy.ru/htmlcss/20/user/58539).
 
 ---
 
