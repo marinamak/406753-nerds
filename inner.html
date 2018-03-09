@@ -26,6 +26,14 @@
 		<section class="filters">
         	<h2 class="visually-hidden">Фильтр товаров</h2>
         	<form class="filter" method="get" action="https://echo.htmlacademy.ru">
+        		<fieldset>
+        			<legend>Сортировать:</legend>
+        			<ul>
+        				<li>По цене</li>
+        				<li>По типу</li>
+        				<li>По названию</li>
+        			</ul>
+        		</fieldset>
           		<fieldset>
           			<legend>Стоимость:</legend>
             			<input class="visually-hidden filter-input filter-input-range" type="range" min="0" max="15000">
@@ -155,5 +163,21 @@
         	<p>Скидка 10% для друзей из социальных сетей.</p>
         </div>
 	</footer>
+	<section class="modal modal-write-us">
+      <h2>Напишите нам</h2>
+      <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <input class="user-name" type="text" name="user" placeholder="Имя Фамилия">Ваше имя:
+        </p>
+        <p>
+          <input class="email" type="text" name="email" placeholder="email@example.com">Ваш e-mail:
+        </p>
+        <p>
+          <input class="message" type="textarea" name="message" placeholder="В свободной форме">Текст письма:
+        </p>
+        <button class="button" type="submit">Отправить</button>
+      </form>
+      <span class="modal-close">x</span>
+    </section>
   </body>
 </html>
