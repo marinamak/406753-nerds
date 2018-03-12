@@ -8,7 +8,7 @@
 	<header class="main-header">
 		<nav class="main-navigation">
 			<a class="main-header-logo" href="index.html">
-			<img src="img/nerds-logo.svg" width="" height="" alt="Логотип Нёрдс">
+			<img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс">
 			</a>
 			<ul class="site-navigation">
 				<li><a href="studio.html">Студия</a></li>
@@ -88,7 +88,7 @@
         <h2 class="visually-hidden">Список сайтов</h2>
         <ul class="catalog-list">
           <li class="catalog-item">
-          	<img src="img/img-sedona.jpg" width="" height="" alt="SEDONA">
+          	<img src="img/img-sedona.jpg" width="360" height="576" alt="SEDONA">
             <h3>
               <a href="catalog-item.html">Sedona</a>
             </h3>
@@ -96,7 +96,7 @@
             <a class="button" href="#">9900 РУБ.</a>
           </li>
           <li class="catalog-item"> 
-            <img src="img/img-pink.jpg" width="" height="" alt="PINK APP">         	
+            <img src="img/img-pink.jpg" width=360"" height="576" alt="PINK APP">         	
             <h3>
               <a href="catalog-item.html">Pink app</a>
             </h3>
@@ -104,7 +104,7 @@
             <a class="button" href="#">9900 РУБ.</a>
           </li>
           <li class="catalog-item">
-          	<img src="img/img-barbershop.jpg" width="" height="" alt="BARBERSHOP">
+          	<img src="img/img-barbershop.jpg" width="360" height="576" alt="BARBERSHOP">
             <h3>
               <a href="catalog-item.html">Barbershop</a>
             </h3>
@@ -112,7 +112,7 @@
             <a class="button" href="#">9900 РУБ.</a>
           </li>
           <li class="catalog-item">
-          	<img src="img/img-mishka.jpg" width="" height="" alt="MISHKA">
+          	<img src="img/img-mishka.jpg" width="360" height="576" alt="MISHKA">
             <h3>
               <a href="catalog-item.html">Mishka</a>
             </h3>
@@ -120,7 +120,7 @@
             <a class="button" href="#">9900 РУБ.</a>
           </li>
           <li class="catalog-item">
-          	<img src="img/img-plus.jpg" width="" height="" alt="A PLUS">
+          	<img src="img/img-aplus.jpg" width="360" height="576" alt="A PLUS">
             <h3>
               <a href="catalog-item.html">A plus</a>
             </h3>
@@ -128,7 +128,7 @@
             <a class="button" href="#">9900 РУБ.</a>
           </li>
           <li class="catalog-item">
-          	<img src="img/img-kvast.jpg" width="" height="" alt="КВАСТ">
+          	<img src="img/img-kvast.jpg" width="360" height="576" alt="КВАСТ">
             <h3>
               <a href="catalog-item.html">Кваст</a>
             </h3>
@@ -145,7 +145,7 @@
       	</section>
 		<section class="contacts">
 			<h2 class="visually-hidden">Контакты</h2>
-			<img class="map" src="img/map.jpg" alt="Карта">
+			<img class="map" src="img/map.jpg" width="1440" height="416" alt="Карта">
 			<p>Nёrds design studio</p>
 			<p>191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8</p>
 			<p>тел. +7(812)275-75-75</p>
@@ -163,18 +163,21 @@
         	<p>Скидка 10% для друзей из социальных сетей.</p>
         </div>
 	</footer>
-	<section class="modal modal-write-us">
+	<section class="modal-write-us">
       <h2>Напишите нам</h2>
       <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          <input class="user-name" type="text" name="user" placeholder="Имя Фамилия">Ваше имя:
-        </p>
-        <p>
-          <input class="email" type="text" name="email" placeholder="email@example.com">Ваш e-mail:
-        </p>
-        <p>
-          <input class="message" type="textarea" name="message" placeholder="В свободной форме">Текст письма:
-        </p>
+        <p> 
+		  <label for="user-name">Ваше имя:</label> 
+		  <input id="user-name" type="text" name="user" placeholder="Имя Фамилия" required> 
+		</p> 
+        <p> 
+		  <label for="email">Ваш e-mail:</label> 
+		  <input id="email" type="text" name="email" placeholder="email@example.com" required> 
+		</p> 
+        <p> 
+		  <label for="message">Текст письма:</label> 
+		  <input id="message" type="textarea" name="message" placeholder="В свободной форме" required> 
+		</p> 
         <button class="button" type="submit">Отправить</button>
       </form>
       <span class="modal-close">x</span>
