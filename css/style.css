@@ -6,7 +6,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  color: #000000;
+  color: #283136;
 }
 
 a{
@@ -40,6 +40,10 @@ a{
 	color: rgba(0, 0, 0, 0.8);
 }
 
+.main-header-logo a:focus{
+	color: rgba(0, 0, 0, 0.3);
+}
+
 .site-navigation a:focus,
 .user-navigation a:focus,
 .main-header-logo a:focus{
@@ -58,6 +62,18 @@ a{
 	font-size: 55px;
 	line-height: 55px;
 	font-weight: 500;
+	color: #000000;
+}
+
+.services-list {
+  list-style: none;
+}
+
+.service-item h3{
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
 }
 
 .button {
@@ -66,7 +82,164 @@ a{
 	font-weight: 500;
 	line-height: 18px;
 	background-color: #fb565a;
+	color: #ffffff;
 	text-align: center;
     vertical-align: middle;
     text-transform: uppercase;
 }
+
+.button:hover{
+  background-color: #e74246;
+}
+
+.button:focus{
+	background-color: #d7373b;
+	color: rgba(215, 55, 59, 0.3);
+}
+
+.button-apps{
+	background-color: #00ca74;
+}
+
+.button-apps:hover{
+	background-color: #00bc6c;
+}
+
+.button-apps:focus{
+	background-color: #00aa62;
+}
+
+.button-presentations{
+	background-color: #efc84a;
+}
+
+.button-presentations:hover{
+	background-color: #eab534;
+}
+
+.button-presentations:focus{
+	background-color: #e5a722;
+}
+
+.info-name{
+	font-size: 45px;
+	line-height: 45px;
+	font-weight: 500;
+	color: #000000;
+}
+
+.info-orders{
+	color: #000000;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.features{
+	font-weight: 700;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.features-list {
+  list-style: none;
+}
+
+.features-item{
+	font-size: 45px;
+	color: #000000;
+	line-height: 10,06px;
+}
+
+.features-item p{
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 400;
+	text-transform: none;
+}
+
+.percent{
+	vertical-align: super;
+
+}
+
+.logo-list {
+  list-style: none;
+  opacity: 0.2;
+}
+
+.logo-item:hover{
+	opacity: 1;
+}
+
+.logo-item:focus{
+	opacity: 0.1;
+}
+
+.contacts{
+	background-color: #ffffff;
+	color: #666666;
+}
+
+.contacts-title{
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 700;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.social-button {
+  color: #000000;
+}
+
+.footer-description b{
+	font-weight: 700;
+	color: #000000;
+	font-size: 36px;
+	line-height: 36px;
+}
+
+.footer-description p{
+	color: #444444;
+	font-size: 16px;
+	line-height: 22px;
+}
+
+.modal-write-us{
+	background-color: #ffffff;
+	color: #000000;
+}
+
+.modal-write-us h2{
+	font-size: 45px;
+	line-height: 45px;
+	font-weight: 500;
+}
+
+.modal-write-us label{
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 700;
+}
+
+.write-us-form input[type="text"],
+.write-us-form input[type="textarea"]{
+	font: inherit;
+	line-height: 18px;
+	color: #a1a1a1;
+	border: 2px solid #d7dcde;
+}
+
+.write-us-form input:hover{
+	border: 2px solid #b4b9bb;
+}
+
+.write-us-form input:focus{
+	color: #444444;
+	border: 2px solid #000000;
+}
+
