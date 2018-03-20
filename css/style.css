@@ -9,14 +9,23 @@ body {
 	color: #283136;
 }
 
-a{
+a {
 	text-decoration: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
 .main-navigation {
-	font-size: 16px;
 	line-height: 30px;
+	font-weight: 500;
 	color: #000000;
+	text-transform: uppercase;
 
 	background-color: #eeeeee;
 }
@@ -32,26 +41,26 @@ a{
 }
 
 .site-navigation a:hover,
-.user-navigation a:hover{
+.user-navigation a:hover {
 	color: #fb565a;
 	border: 0;
 }
 
-.main-navigation img:hover{
+.main-navigation img:hover {
 	opacity: 0.8;
 }
 
 .site-navigation a:active,
-.user-navigation a:active,{
+.user-navigation a:active {
 	color: rgba(0, 0, 0, 0.3);
 	border: 0;
 }
 
-.main-navigation img:active{
+.main-navigation img:active {
 	opacity: 0.3;
 }
 
-.site-navigation-current a{
+.site-navigation-current a {
 	border-bottom: 2px solid #fb565a;
 }
 
@@ -75,7 +84,7 @@ a{
 	list-style: none;
 }
 
-.service-item h3{
+.service-item h3 {
 	font-size: 24px;
 	line-height: 30px;
 	font-weight: 700;
@@ -94,57 +103,53 @@ a{
     text-transform: uppercase;
 }
 
-.button:hover{
+.button:hover {
 	background-color: #e74246;
 }
 
-.button:active{
+.button:active {
 	background-color: #d7373b;
-	color: rgba(215, 55, 59, 0.3);
+	color: rgba(255, 255, 255, 0.3);
 }
 
-.button-more:hover{
-
-}
-
-.button-apps{
+.button-apps {
 	background-color: #00ca74;
 }
 
-.button-apps:hover{
+.button-apps:hover {
 	background-color: #00bc6c;
 }
 
-.button-apps:active{
+.button-apps:active {
 	background-color: #00aa62;
 }
 
-.button-presentations{
+.button-presentations {
 	background-color: #efc84a;
 }
 
-.button-presentations:hover{
+.button-presentations:hover {
 	background-color: #eab534;
 }
 
-.button-presentations:active{
+.button-presentations:active {
 	background-color: #e5a722;
 }
 
-.info-name{
+.info-name {
 	font-size: 45px;
 	line-height: 45px;
 	font-weight: 500;
 	color: #000000;
 }
 
-.info-orders{
+.info-orders {
 	color: #000000;
 	font-weight: 700;
 	text-transform: uppercase;
 }
 
-.features{
+.features {
 	font-weight: 700;
 	color: #000000;
 	text-transform: uppercase;
@@ -154,45 +159,42 @@ a{
 	list-style: none;
 }
 
-.features-item{
+.features-item {
 	font-size: 45px;
 	color: #000000;
 	line-height: 10,06px;
 }
 
-.features-item p{
+.features-item p {
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: 400;
 	text-transform: none;
 }
-
-.percent{
-	vertical-align: super;
-}
-
+ 
 .logo-list {
 	list-style: none;
 }
 
-.logo-item img{
+.logo-item img {
 	opacity: 0.2;
 }
 
-.logo-item img:hover{
+.logo-item img:hover {
 	opacity: 1;
 }
 
-.logo-item img:active{
+.logo-item img:active {
 	opacity: 0.1;
 }
 
-.contacts{
+.contacts {
+	line-height: 18px;
 	background-color: #ffffff;
 	color: #666666;
 }
 
-.contacts-title{
+.contacts-title {
 	font-size: 18px;
 	line-height: 30px;
 	font-weight: 700;
@@ -208,74 +210,77 @@ a{
 	color: #000000;
 }
 
-.footer-description b{
+.footer-description b {
 	font-weight: 700;
 	color: #000000;
 	font-size: 36px;
 	line-height: 36px;
 }
 
-.footer-description p{
+.footer-description p {
 	color: #444444;
 	font-size: 16px;
 	line-height: 22px;
 }
 
-.modal-write-us{
+.modal-write-us {
 	background-color: #ffffff;
 	color: #000000;
 }
 
-.modal-write-us h2{
+.modal-write-us h2 {
 	font-size: 45px;
 	line-height: 45px;
 	font-weight: 500;
 }
 
-.modal-write-us label{
+.modal-write-us label {
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: 700;
 }
 
 .write-us-form input[type="text"],
-.write-us-form input[type="textarea"]{
+.write-us-form textarea {
 	font: inherit;
 	line-height: 18px;
-	color: #a1a1a1;
-	border: 2px solid #d7dcde;
+	color: rgba(68, 68, 68, 0.5);
+	border: 2px solid #444444;
+	outline-style: none;
 }
 
-.write-us-form input:hover{
-	border: 2px solid #b4b9bb;
+.write-us-form input:hover, .write-us-form textarea:hover {
+	color: rgba(68, 68, 68, 0.5);
+	border: 2px solid #444444;
 }
 
-.write-us-form input:focus{
-	color: #444444;
-	border: 2px solid #000000;
+.write-us-form input:focus, .write-us-form textarea:focus {
+	color: rgb(68, 68, 68);
+	border: 2px solid #444444;
 }
 
-.write-us-form input:invalid{
+.write-us-form input:invalid, .write-us-form textarea:invalid {
 	color: #e74246;
 	border: 2px solid #e74246;
 }
 
-.button-write-us{
+.button-write-us {
 	border: 0;
 }
 
-.page-title{
+.page-title {
 	font-size: 55px;
 	line-height: 55px;
 	font-weight: 500;
 	color: #000000;
 }
 
-.filter{
+.filter {
 	font-size: 18px;
 	line-height: 30px;
 	font-weight: 700;
 	color: #000000;
+	text-transform: uppercase;
 }
 
 .filter fieldset {
@@ -286,7 +291,7 @@ a{
 	list-style: none;
 }
 
-.filter-sort a{
+.filter-sort a {
 	font-size: 14px;
 	line-height: 18px;
 	color: #000000;
@@ -298,11 +303,11 @@ a{
 	opacity: 0.6;
 }
 
-.filter-sort a:active{
+.filter-sort a:active {
 	opacity: 1;
 }
 
-.filter-sort-current a{ 
+.filter-sort-current a { 
 	opacity: 1;
 }
 
@@ -321,25 +326,29 @@ a{
 	background-color: #eeeeee;
 }
 
-.filter-net li{
+.filter-net li {
 	line-height: 20px;
 	color: #283136;
 }
 
-.filter-input-radio:hover + label{
+.filter label{
+	font-size: 16px;
+}
+
+.filter-input-radio:hover + label {
   color: #000000;
 }
 
-.filter-input:disabled + label{
+.filter-input:disabled + label {
 	opacity: 0.3;
 }
 
-.filter-features li{
+.filter-features li {
 	line-height: 20px;
 	color: #283136;
 }
 
-.filter-button{
+.filter-button {
 	line-height: 18px;
 	font-weight: 500;
 	color: #000000;
@@ -347,11 +356,11 @@ a{
 	border: 0;
 }
 
-.filter-button:hover{
+.filter-button:hover {
 	background-color: #dfdfdf;
 }
 
-.filter-button:active{
+.filter-button:active {
 	opacity: 0.3;
 	background-color: #d5d5d5;
 	border-top: #bfbfbf;
@@ -361,7 +370,7 @@ a{
   list-style: none;
 }
 
-.catalog-item img{
+.catalog-item img {
 	border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -371,11 +380,11 @@ a{
  	box-shadow: 0px 6px 15px 0px rgba(0, 1, 1, 0.25);
 }
 
-.catalog-price{
+.catalog-price {
 	background-color: #eeeeee;
 }
 
-.catalog-price a{
+.catalog-price a {
 	font-size: 18px;
 	line-height: 30px;
 	font-weight: 700;
@@ -383,7 +392,7 @@ a{
 	text-transform: uppercase;
 }
 
-.catalog-price p{
+.catalog-price p {
 	line-height: 18px;
 	color: #666666;
 }
@@ -403,23 +412,23 @@ a{
   list-style: none;
 }
 
-.pagination-list a{
+.pagination-list a {
 	line-height: 18px;
 	font-weight: 500;
 	color: #000000;
 	background-color: #eeeeee;
 }
 
-.pagination-item-current a{
+.pagination-item-current a {
 	border: 3px solid #dbdbdb;
 	background-color: #ffffff;
 }
 
-.pagination-list a:hover{
+.pagination-list a:hover {
 	background-color: #dfdfdf;
 }
 
-.pagination-list a:active{
+.pagination-list a:active {
 	color: rgba(0, 0, 0, 0.3);
 	background-color: #d5d5d5;
 	box-shadow: inset 0px 3px 0px 0px rgba(0, 1, 1, 0.1);
