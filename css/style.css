@@ -101,6 +101,7 @@ a {
 	text-align: center;
     vertical-align: middle;
     text-transform: uppercase;
+    border-radius: 2px;
 }
 
 .button:hover {
@@ -110,6 +111,7 @@ a {
 .button:active {
 	background-color: #d7373b;
 	color: rgba(255, 255, 255, 0.3);
+	box-shadow: inset 0px 3px 0px 0px rgba(0, 1, 1, 0.1);	
 }
 
 .button-apps {
@@ -280,6 +282,9 @@ a {
 	line-height: 30px;
 	font-weight: 700;
 	color: #000000;
+}
+
+.filter legend{
 	text-transform: uppercase;
 }
 
@@ -363,7 +368,6 @@ a {
 .filter-button:active {
 	opacity: 0.3;
 	background-color: #d5d5d5;
-	border-top: #bfbfbf;
 }
 
 .catalog-list {
@@ -384,7 +388,7 @@ a {
 	background-color: #eeeeee;
 }
 
-.catalog-price a {
+.catalog-title a {
 	font-size: 18px;
 	line-height: 30px;
 	font-weight: 700;
