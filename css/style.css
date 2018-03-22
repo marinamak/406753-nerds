@@ -21,13 +21,26 @@ a {
   margin: -1px;
 }
 
+.main-header-logo {
+	width: 160px;
+	height: 65px;
+	padding-right: 20px;
+	margin-top: 49px;
+}
+
 .main-navigation {
 	line-height: 30px;
 	font-weight: 500;
 	color: #000000;
 	text-transform: uppercase;
-
 	background-color: #eeeeee;
+	display: flex;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .site-navigation,
@@ -64,6 +77,22 @@ a {
 	border-bottom: 2px solid #fb565a;
 }
 
+.site-navigation {
+	display: flex;
+	width: 800px;
+	padding-right: 180px;
+	padding-left: 180px;
+	margin-top: 73px;
+}
+
+.site-navigation a {
+	margin-right: 45px;
+}
+
+.user-navigation {
+	width: 180px;
+	margin-top: 73px;
+}
 
 .slider {
 	background-color: #eeeeee;
