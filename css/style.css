@@ -64,7 +64,7 @@ a {
 	color: #000000;
 }
 
-.site-navigation a:hover,
+.site-navigation a:not(.site-navigation-current):hover,
 .user-navigation a:hover {
 	color: #fb565a;
 	border: 0;
@@ -74,7 +74,7 @@ a {
 	opacity: 0.8;
 }
 
-.site-navigation a:active,
+.site-navigation a:active:not(.site-navigation-current),
 .user-navigation a:active {
 	color: rgba(0, 0, 0, 0.3);
 	border: 0;
@@ -436,7 +436,6 @@ a {
 .features-item {
 	font-size: 45px;
 	color: #000000;
-	line-height: 10,06px;
 	margin-bottom: 10px;
 }
 
@@ -589,7 +588,7 @@ a {
 }
 
 .social-button:hover{
-  background-color: #e74246;
+  	background-color: #e74246;
 }
 
 .social-button:active {
@@ -598,7 +597,7 @@ a {
 }
 
 .social-button:active path {
-  opacity: 0.3;
+  	opacity: 0.3;
 }
 
 .footer-description {
@@ -895,31 +894,29 @@ a {
 
 .filter-sort {
 	display: flex;
-	padding: 0;
 	margin: 0;
+	margin-right: 3px;
+	margin-left: 20px;
+	padding: 0;
 }
 
-.catalog fieldset {
-	margin-right: 0;
-	margin-left: 0;
-  	padding: 0;
-	border: none;
-}
-
-.fieldset-sort ul {
+.section-sort ul {
 	list-style: none;
 }
 
-.fieldset-sort {
+.section-sort {
 	display: flex;
-
+	margin-bottom: 53px;
+	width: 760px;
 	line-height: 18px;
 	color: #000000;
-	width: 760px;
 }
 
-.fieldset-sort legend {
+.section-sort p {
+	margin: 0;
+	margin-right: 20px;
 	padding: 0;
+	width: 360px;
 	font-size: 18px;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -933,6 +930,10 @@ a {
 	opacity: 0.3;
 }
 
+.filter-sort li {
+	margin-right: 25px;
+}
+
 .filter-sort a:hover {
 	opacity: 0.6;
 }
@@ -942,6 +943,27 @@ a {
 }
 
 .filter-sort-current a { 
+	opacity: 1;
+}
+
+.switches-list {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.switches-item-current {
+	margin-right: 18px;
+	margin-left: 19px;
+}
+
+.switches-item:not(.switches-item-current):hover path {
+	opacity: 1;
+}
+
+.switches-item:not(.switches-item-current):active path {
+	fill: #231f20;
 	opacity: 1;
 }
 
@@ -1085,6 +1107,8 @@ a {
 }
 
 .catalog-item {
+	position: relative;
+	margin-bottom: 33px;
 	width: 360px;
 }
 
@@ -1099,9 +1123,14 @@ a {
 }
 
 .catalog-price {
-	height: 231px;
+	display: none;
+	position: absolute;
+	bottom: 0;
+	left: 0;
 	padding-top: 30px;
 	padding-bottom: 43px;
+	width: 361px;
+	height: 231px;
 	box-sizing: border-box;
 	background-color: #eeeeee;
 }
