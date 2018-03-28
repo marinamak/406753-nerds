@@ -19,16 +19,19 @@
 					<li><a href="inner.html">Магазин</a></li>
 					<li><a href="contacts.html">Контакты</a></li>
 				</ul>	
-				<ul class="user-navigation">
-					<li><a class="cart-link" href="cart.html">Корзина</a></li>
-				</ul>		
+				<div class="user-navigation">
+					<a class="cart-link" href="cart.html">Корзина</a>
+				</div>		
 			</nav>
 			<section class="slider">
 					<h2 class="visually-hidden">Принципы студии</h2>
+					<input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+        			<input class="visually-hidden" type="radio" id="product-2" name="toggle">
+        			<input class="visually-hidden" type="radio" id="product-3" name="toggle">
 	        		<div class="slider-controls">
-	        			<i class="active"></i>
-						<i></i>
-				        <i></i>
+	        			<label class="slider-controls-item slider-controls-item--1" for="product-1">Первый</label>
+          				<label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
+          				<label class="slider-controls-item slider-controls-item--3" for="product-3">Третий</label>
 	          		</div>
 					<ul class="slides-list">
 						<li class="slide-item">

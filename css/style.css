@@ -55,8 +55,7 @@ a {
 	padding: 0;
 }
 
-.site-navigation,
-.user-navigation {
+.site-navigation {
  	list-style: none;
 }
 
@@ -134,8 +133,8 @@ a {
 }
 
 .slider {
-	background-color: #eeeeee;
 	position: relative;
+	background-color: #eeeeee;
 }
 
 .slider-controls {
@@ -150,7 +149,7 @@ a {
 	transform: translateX(-50%);
 }
 
-.slider-controls i {
+.slider-controls label {
 	position: relative;
   	display: inline-block;
   	width: 18px;
@@ -160,7 +159,7 @@ a {
   	cursor: pointer;
 }
 
-.slider-controls i::after {
+.slider-controls label::after {
   	content: "";
   	width: 18px;
   	height: 18px;
@@ -172,23 +171,6 @@ a {
   	background: #ffffff;
 }
 
-.slider-controls .active::before {
-  	content: "";
-  
-  	position: absolute;
-  	left: 50%;
-  	top: 50%;
-  	z-index: 2;
-  
-  	width: 4px;
-  	height: 4px;
-  	margin: -4px;
-  
-  	background-color: inherit;
-  	border: 2px solid #c1c1c1;
-  	border-radius: 50%;
-}
-
 .slides-list {
 	list-style: none;
 	margin: 0;
@@ -198,10 +180,6 @@ a {
 .slide-item {
   	display: none;
   	padding: 78px 0 80px 0;
-}
-
-.slide-item:nth-child(1) {
-  	display: block;
 }
 
 .slide-item:nth-child(1) {
@@ -220,6 +198,37 @@ a {
   	background-image: url("../img/slide3.png");
   	background-repeat: no-repeat;
   	background-position: 100% 20px;
+}
+
+#product-1:checked ~ .slides-list .slide-item:nth-child(1) {
+  	display: block;
+}
+
+#product-2:checked ~ .slides-list .slide-item:nth-child(2) {
+  	display: block;
+}
+
+#product-3:checked ~ .slides-list .slide-item:nth-child(3) {
+  	display: block;
+}
+
+#product-1:checked ~ .slider-controls .slider-controls-item--1::before,
+#product-2:checked ~ .slider-controls .slider-controls-item--2::before,
+#product-3:checked ~ .slider-controls .slider-controls-item--3::before {
+  	content: "";
+  
+  	position: absolute;
+  	left: 50%;
+  	top: 50%;
+  	z-index: 2;
+  
+  	width: 4px;
+  	height: 4px;
+  	margin: -4px;
+  
+  	background-color: inherit;
+  	border: 2px solid #c1c1c1;
+  	border-radius: 50%;
 }
 
 .slide-name {
@@ -656,7 +665,7 @@ a {
 }
 
 .modal-error {
-  animation: shake 0.6s;
+  	animation: shake 0.6s;
 }
 
 .modal-write-us h2 {
@@ -1173,9 +1182,20 @@ a {
 	background-color: #dfdfdf;
 }
 
+.pagination-item-current a:hover {
+	padding: 13px 18px;
+	border: 3px solid #dbdbdb;
+	background-color: #ffffff;
+}
+
 .pagination-list a:active {
 	color: rgba(0, 0, 0, 0.3);
 	background-color: #d5d5d5;
 	box-shadow: inset 0px 3px 0px 0px rgba(0, 1, 1, 0.1);
 }
 
+.pagination-item-current a:active {
+	padding: 13px 18px;
+	border: 3px solid #dbdbdb;
+	background-color: #ffffff;
+}
