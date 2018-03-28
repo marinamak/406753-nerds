@@ -611,16 +611,52 @@ a {
 	line-height: 22px;
 }
 
+@keyframes shake {
+  	0%,
+  	100% {
+  	  transform: translateX(0);
+  	}
+	
+ 	10%,
+  	30%,
+  	50%,
+  	70%,
+  	90% {
+  	  transform: translateX(-10px);
+  	}
+
+  	20%,
+  	40%,
+  	60%,
+  	80% {
+  	  transform: translateX(10px);
+  	}
+}
+
 .modal-write-us {
 	display: none;
+	position: fixed;
+	z-index: 2;
+	top: 0;
+	left: 120px;
 	background-color: #ffffff;
 	color: #000000;
 	width: 960px;
 	height: 590px;
+	box-sizing: border-box;
 	padding-left: 80px;
 	padding-right: 80px;
 	padding-bottom: 85px;
 	padding-top: 65px;
+	box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
+
+.modal-show {
+  	display: block;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
 
 .modal-write-us h2 {
@@ -639,12 +675,27 @@ a {
 }
 
 .modal-close {
+	position: absolute;
+  	top: 78px;
+  	right: 90px;
 	width: 22px;
 	height: 22px;
 	font-size: 0;
-	background-color: red;
 	border: 0;
 	cursor: pointer;
+	opacity: 0.3;
+	background-image: url("../img/close-cross.svg");
+	background-color: #ffffff;
+  	background-repeat: no-repeat;
+  	background-position: 0 0;
+}
+
+.modal-close:hover {
+	opacity: 1;
+}
+
+.modal-close:active {
+	opacity: 0.1;
 }
 
 .write-us-form {
