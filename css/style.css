@@ -249,9 +249,9 @@ a {
 
 .button {
 	display: block;
-	font: inherit;
-	width: 240px;
   	padding: 15px 0;
+	width: 240px;
+	font: inherit;
 	font-weight: 500;
 	line-height: 18px;
 	background-color: #fb565a;
@@ -278,7 +278,6 @@ a {
 }
 
 .services-list {
-	list-style: none;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -286,6 +285,7 @@ a {
 	margin-top: 81px;
 	padding: 0;
 	padding-right: 60px;
+	list-style: none;
 }
 
 .service-item {
@@ -297,12 +297,12 @@ a {
 }
 
 .service-item h3 {
+	margin: 0;
+	margin-bottom: 16px;
 	font-size: 24px;
 	line-height: 30px;
 	font-weight: 700;
 	text-transform: uppercase;
-	margin: 0;
-	margin-bottom: 16px;
 }
 
 .service-item p {
@@ -311,16 +311,16 @@ a {
 }
 
 .button-sites {
+	padding-top: 0 16px;
 	width: 160px;
 	height: 50px;
-	padding-top: 0 16px;
 	box-sizing: border-box;
 }
 
 .button-apps {
+	padding-top: 0 16px;
 	width: 160px;
 	height: 50px;
-	padding-top: 0 16px;
 	box-sizing: border-box;
 	background-color: #00ca74;
 }
@@ -334,9 +334,9 @@ a {
 }
 
 .button-presentations {
+	padding-top: 0 16px;
 	width: 160px;
 	height: 50px;
-	padding-top: 0 16px;
 	box-sizing: border-box;
 	background-color: #efc84a;
 }
@@ -350,10 +350,10 @@ a {
 }
 
 .studio {
-	padding-top: 73px;
-	margin-bottom: 50px;
 	display: flex;
 	justify-content: space-between;
+	margin-bottom: 42px;
+	padding-top: 73px;
 	border-top: 2px solid #eeeeee;
 	background-image: url(../img/nerds-illustration.jpg);
 	background-repeat: no-repeat;
@@ -365,8 +365,8 @@ a {
 }
 
 .info-list {
-	list-style: none;
 	padding: 0;
+	list-style: none;
 }
 
 .info-name {
@@ -410,42 +410,52 @@ a {
 }
 
 .features {
+	margin-top: 210px;
+	width: 360px;
+	min-height: 200px;
+	align-self: flex-start;
 	font-weight: 700;
 	color: #000000;
 	text-transform: uppercase;
-	width: 360px;
-	min-height: 200px;
-	align-self: flex-end;
 }
 
 .features ul {
+	margin-top: 43px;
 	padding: 0;
-	margin-top: 40px;
 }
 
 .features p {
+	margin: 0;
+	padding: 0;
 	text-align: center;
-	margin-top: 10px;
 }
 
 .features-list {
-	list-style: none;
 	display: flex;
+	list-style: none;	
+}
+
+.features-list li {
+	margin-right: 22px;
 }
 
 .features-item {
+	margin-bottom: 10px;
 	font-size: 45px;
 	color: #000000;
-	margin-bottom: 10px;
 }
 
 .features-item p {
+	margin-top: 30px;
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: 400;
 	text-transform: none;
-	margin-top: 20px;
 	text-align: left;
+}
+
+.features-item sup {
+	font-size: 24px;
 }
 
 .logo-list {
