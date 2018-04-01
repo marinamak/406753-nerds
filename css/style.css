@@ -1361,6 +1361,7 @@ a {
 
 .catalog-item img {	
 	border: 1px solid rgba(0, 1, 1, 0.1);
+	border-top: none;
 	vertical-align: middle;
 }
 
@@ -1383,6 +1384,7 @@ a {
 
 .catalog-item:hover img {
 	border-color: transparent;
+	border-top: none;
 	vertical-align: middle;
 }
 
