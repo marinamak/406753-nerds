@@ -561,6 +561,11 @@ a {
 	background-color: #ffffff;
 }
 
+.contacts iframe {
+	width: 100%;
+	border: 0;
+}
+
 .contacts-container .contacts-title {
 	margin: 0;
 	margin-bottom: 23px;
