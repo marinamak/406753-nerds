@@ -1369,12 +1369,8 @@ a {
 	vertical-align: middle;
 }
 
-.catalog-item:hover img {	
-	border: none;
-}
-
 .catalog-item:hover svg {
-	border: none;
+	border: 1px solid transparent;
 }
 
 .catalog-item:hover {
