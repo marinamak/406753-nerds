@@ -370,11 +370,10 @@ a {
 
 .studio {
 	display: flex;
-	justify-content: space-between;
 
 	margin-bottom: 42px;
 	padding-top: 73px;
-	border-top: 2px solid #eeeeee;
+	border-top: 2px solid #eeeeee; 
 
 	background-image: url(../img/nerds-illustration.jpg);
 	background-repeat: no-repeat;
@@ -387,7 +386,6 @@ a {
 
 .info-list {
 	padding: 0;
-
 	list-style: none;
 }
 
@@ -439,6 +437,7 @@ a {
 	align-self: flex-start;
 
 	margin-top: 210px;
+	margin-left: 148px;
 	width: 360px;
 	min-height: 200px;
 
@@ -499,7 +498,7 @@ a {
 
 .logo-item {
 	display: flex;
-	flex-basis: 20%;
+	flex-basis: 278px;
 	justify-content: center;
 	position: relative;
 }
@@ -559,7 +558,8 @@ a {
 
 	color: #666666;
 	background-image: url("../img/mapandmaker.jpg");
-	background-position: 0 0;
+	background-position: center;
+	background-repeat: no-repeat;
 	background-color: #ffffff;
 }
 
@@ -578,7 +578,6 @@ a {
 .contacts-container {
 	position: absolute;
 	top: 54px;
-	left: 140px;
 	z-index: 1;
 
 	padding: 50px;
@@ -695,21 +694,21 @@ a {
 }
 
 @keyframes bounce {
-  0% {
-    transform: translateY(-2000px);
-  }
+	0% {
+	  transform: translateY(-2000px);
+	}
 
-  70% {
-    transform: translateY(30px);
-  }
+	70% {
+	  transform: translateY(30px);
+	}
 
-  90% {
-    transform: translateY(-10px);
-  }
+	90% {
+	  transform: translateY(-10px);
+	}
 
-  100% {
-    transform: translateY(0);
-  }
+	100% {
+	  transform: translateY(0);
+	}
 }
 
 .modal-write-us {
@@ -717,7 +716,7 @@ a {
 	position: fixed;
 	top: 0;
 	left: 50%;
-	z-index: 2;
+	z-index: 200;
 	
 	margin-left: -480px;
 	padding-left: 80px;
@@ -1408,6 +1407,7 @@ a {
 }
 
 .catalog-item .catalog-price {
+	display: none;
 	position: absolute;
 	bottom: 0;
 	left: 1px;
