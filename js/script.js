@@ -5,23 +5,42 @@ var link = document.querySelector(".button-contacts");
 		var user = popup.querySelector("[name=user]");	
 		var email = popup.querySelector("[name=email]");
 		var message = popup.querySelector("[name=message]");
-		var isStorageSupport = true;
-  		var storage = "";
+		var isStorageUserSupport = true;
+		var isStorageEmailSupport = true;
+  		var storage_user = "";
+  		var storage_email = "";
   
 		try {
-		  storage = localStorage.getItem("user");
+		  storage_user = localStorage.getItem("user");
 		} catch (err) {
-		  isStorageSupport = false;
+		  isStorageUserSupport = false;
+		}
+
+		try {
+		  storage_email = localStorage.getItem("email");
+		} catch (err) {
+		  isStorageEmailSupport = false;
 		}	
 
 		link.addEventListener("click", function (evt) {
 			evt.preventDefault();
 			popup.classList.add("modal-show");
-			if (storage) {
-      			user.value = storage;
+			if (storage_user) {
+      			user.value = storage_user;
       			email.focus();
     		} else {
       			user.focus();
+    		}
+		});
+
+		link.addEventListener("click", function (evt) {
+			evt.preventDefault();
+			popup.classList.add("modal-show");
+			if (storage_email) {
+      			email.value = storage_email;
+      			message.focus();
+    		} else {
+      			email.focus();
     		}
 		});
 
@@ -38,8 +57,11 @@ var link = document.querySelector(".button-contacts");
       			popup.offsetWidth = popup.offsetWidth;
       			popup.classList.add("modal-error");
     		} else {
-      			if (isStorageSupport) {
+      			if (isStorageUserSupport) {
         			localStorage.setItem("user", user.value);
+      			}
+      			if (isStorageEmailSupport) {
+        			localStorage.setItem("email", email.value);
       			}
     		}
   		});
